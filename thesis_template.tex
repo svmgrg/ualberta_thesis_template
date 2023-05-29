@@ -209,23 +209,29 @@ Contents...
 If you wish to, you can also use a separate \texttt{.tex} file for each chapter, and then include a reference to that file here.
 
 %% Following uses manually added references. If you prefer, replace this with BibTeX.
-\chapter*{References}
-\addcontentsline{toc}{chapter}{References}
+% \chapter*{References}
+% \addcontentsline{toc}{chapter}{References}
 
-\medskip
-%% \small
+% \medskip
+% %% \small
 
-\begin{list}{}{%
-    \setlength{\topsep}{0pt}%
-    \setlength{\leftmargin}{0.2in}%
-    \setlength{\listparindent}{-0.2in}%
-    \setlength{\itemindent}{-0.2in}%
-    \setlength{\parsep}{\parskip}%
-  }%
+% \begin{list}{}{%
+%     \setlength{\topsep}{0pt}%
+%     \setlength{\leftmargin}{0.2in}%
+%     \setlength{\listparindent}{-0.2in}%
+%     \setlength{\itemindent}{-0.2in}%
+%     \setlength{\parsep}{\parskip}%
+%   }%
   
-\item[] Einstein, A., Newton, I., Feynman R.P. (2002). Lectures on the unified theory of physics. \textit{Physical Review, 92}(5), 1324.
+% \item[] Einstein, A., Newton, I., Feynman R.P. (2002). Lectures on the unified theory of physics. \textit{Physical Review, 92}(5), 1324.
   
-\item[] Einstein, A., Newton, I., Feynman R.P. (2003). More lectures on the unified theory of physics. \textit{Physical Review, 99}(3), 1324.
-\end{list}
+% \item[] Einstein, A., Newton, I., Feynman R.P. (2003). More lectures on the unified theory of physics. \textit{Physical Review, 99}(3), 1324.
+% \end{list}
+
+This is an example reference \cite{sorg2010linear}.
+
+\renewcommand{\bibname}{References}
+\bibliography{ref}
+\bibliographystyle{abbrv}
 
 \end{document}
